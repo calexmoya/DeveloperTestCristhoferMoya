@@ -1,0 +1,34 @@
+﻿@model List<DeveloperTestCristhoferMoya.Models.CasesRegion>
+@{
+    Layout = null;
+}
+
+<table class="table table-hover ">
+    <thead>
+        <tr>
+            <th>RANK</th>
+            <th>PROVINCE</th>
+            <th>CASES</th>
+            <th>DEATHS</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.rank</td>
+                <td>@item.region.province</td>
+                <td>@item.confirmed.ToString("N0")</td>
+                <td>@item.deaths.ToString("N0")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="text-right">
+    <p>
+        This information uses
+        <a href="https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics" target="_blank">
+            COVID-19 API
+        </a>,last updated: @Model.First().last_update.ToShortDateString()
+    </p>
+</div>

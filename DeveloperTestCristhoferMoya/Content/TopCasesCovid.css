@@ -1,0 +1,39 @@
+﻿.table-wrapper {
+    background: #fff;
+    border-radius: 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
+}
+.table-wrapper th, .table-wrapper td {
+    padding: 0.55rem;
+}
+.table-title {
+    background: linear-gradient(to right, #bc202e, #273271) !important;
+    color: #fff;
+    padding: 16px 30px;
+}
+
+.table-title h2 {
+        margin: 5px 0 0;
+        font-size: 24px;
+}
+
+
+.table-title .btn {
+        color: #fff;
+        float: right;
+        font-size: 14px;
+        border: none;
+        min-width: 50px;
+        border-radius: 1px;
+        border: none;
+        outline: none !important;
+        margin-left: 10px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
+}
+
+.table-title .btn i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
